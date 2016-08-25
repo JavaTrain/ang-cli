@@ -1,0 +1,15 @@
+<div *ngIf="page">
+  <h2>{{page.title}}</h2>
+  <div style="width:70%">
+    {{page.body}}
+  </div>
+  <button (click)="onEdit(page)">
+    <span>{{(edit) ? 'Close' : 'Edit'}}</span>
+  </button>
+</div>
+<div *ngIf="edit">
+  <page-form [model]="editPage" [edit]="true"></page-form>
+</div>
+<p>
+  <button (click)="gotoPages()">Back</button>
+</p>

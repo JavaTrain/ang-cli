@@ -1,0 +1,7 @@
+<div *ngIf="page" class="form-group">
+  <h2><input [(ngModel)]="page.title" placeholder="title"/></h2>
+  <div>
+    <textarea [(ngModel)]="page.body" placeholder="body" rows="7" cols="100"> </textarea>
+  </div>
+  <button (click)="onSubmit(page)">Submit</button>
+</div>

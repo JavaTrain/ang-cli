@@ -1,0 +1,8 @@
+<div *ngIf="pages">
+  <div *ngFor="let page of pages" [class.selected]="page === selectedPage" class="shadow">
+  	<div (click)="onChoose(page)" class="text-block">
+    	<h2 style="cursor: pointer" (click)="onChoose(page)">{{page.title}}</h2>
+    	<div>{{page.body}}</div>
+  	</div>
+  </div>
+</div>

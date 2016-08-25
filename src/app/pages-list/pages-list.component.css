@@ -1,0 +1,15 @@
+.shadow{
+	/*width:400px;*/
+	margin:20px;
+	cursor:text;
+	box-shadow:inset 0px -40px 40px -35px #ddd;
+}
+
+.text-block1{
+	color:#000;
+	position:relative;
+	z-index:-1;
+	background:#eee;
+	max-height: 150px;
+	overflow:hidden;
+}
